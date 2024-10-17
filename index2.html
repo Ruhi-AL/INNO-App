@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric to Imperial Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Metric to Imperial Converter</h1>
+
+        <!-- Input Field for the Value -->
+        <input type="number" id="inputValue" placeholder="Enter value" class="input-field">
+
+        <!-- Dropdown for Metric Options -->
+        <select id="metricType" class="dropdown">
+            <option value="meters">Meters to Feet</option>
+            <option value="kilometers">Kilometers to Miles</option>
+            <option value="centimeters">Centimeters to Inches</option>
+            <option value="millimeters">Millimeters to Inches</option>
+            <option value="grams">Grams to Ounces</option>
+            <option value="kilograms">Kilograms to Pounds</option>
+            <option value="liters">Liters to Gallons</option>
+            <option value="milliliters">Milliliters to Fluid Ounces</option>
+        </select>
+
+        <!-- Convert Button -->
+        <button onclick="convert()" class="convert-btn">Convert</button>
+
+        <!-- Display Conversion Result -->
+        <p id="result" class="result-display"></p>
+
+        <!-- Reverse Conversion Button -->
+        <button onclick="reverseConversion()" class="reverse-btn" id="reverse-btn">Reverse Conversion</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
